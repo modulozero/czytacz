@@ -1,7 +1,7 @@
 from argon2 import PasswordHasher
 from sqlalchemy.orm import Session
 
-from . import models, schemas
+from czytacz import models, schemas
 
 
 def get_user(db: Session, user_id: int):

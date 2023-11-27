@@ -33,7 +33,12 @@
 	// "forwardPorts": [5000, 5432],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "poetry install --no-root"
+	// "postCreateCommand": "poetry install --no-root"
+
+	"postStartCommand": [
+		"poetry install --no-root",
+		"git config --global --add safe.directory ${containerWorkspaceFolder}"
+	]
 
 	// Configure tool-specific properties.
 	// "customizations": {},

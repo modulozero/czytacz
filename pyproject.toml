@@ -17,6 +17,8 @@ alembic = "^1.12.1"
 python-dotenv = "^1.0.0"
 pydantic-settings = "^2.1.0"
 
+[tool.poetry.scripts]
+api = "czytacz.api:run"
 
 [build-system]
 requires = ["poetry-core"]

@@ -10,7 +10,7 @@
             "request": "launch",
             "module": "uvicorn",
             "args": [
-                "czytacz.main:app",
+                "czytacz.api:app",
                 "--reload"
             ],
             "jinja": true,

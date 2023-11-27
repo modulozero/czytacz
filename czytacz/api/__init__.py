@@ -1,8 +1,10 @@
 from fastapi import Depends, FastAPI, HTTPException
 from sqlalchemy.orm import Session
 
-from . import crud, models, schemas
-from .database import SessionLocal, engine
+from czytacz import schemas
+from czytacz.database import SessionLocal
+
+from . import crud
 
 app = FastAPI()
 
@@ -53,3 +55,9 @@ def create_item_for_user(
 def read_items(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
     items = crud.get_feeds(db, skip=skip, limit=limit)
     return items
+
+
+def run(reload=True):
+    import uvicorn
+
+    uvicorn.run("czytacz.api:app", reload=reload)
