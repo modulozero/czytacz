@@ -6,6 +6,14 @@ authors = ["ModZero <modzero@modzero.xyz>"]
 license = "AGPL-3.0-or-later"
 readme = "README.md"
 
+[tool.ruff]
+select = ["E4", "E7", "E9", "F", "N", "D2", "D3", "D4"]
+
+[[tool.mypy.overrides]]
+# It seems next version will have types defined
+module = "feedparser"
+ignore_missing_imports = true
+
 [tool.poetry.dependencies]
 python = "^3.11"
 fastapi = "^0.104.1"
@@ -16,9 +24,11 @@ argon2-cffi = "^23.1.0"
 alembic = "^1.12.1"
 python-dotenv = "^1.0.0"
 pydantic-settings = "^2.1.0"
+feedparser = "^6.0.10"
+typer = {extras = ["all"], version = "^0.9.0"}
 
 [tool.poetry.scripts]
-api = "czytacz.api:run"
+czytacz = "czytacz.cli:app"
 
 [build-system]
 requires = ["poetry-core"]

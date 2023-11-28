@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
+    xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/">
+    <channel>
+        <title>NU - Algemeen</title>
+        <link>https://www.nu.nl/algemeen</link>
+        <description>Het laatste nieuws het eerst op NU.nl</description>
+        <atom:link href="https://www.nu.nl/rss/Algemeen" rel="self"></atom:link>
+        <language>nl-nl</language>
+        <copyright>Copyright (c) 2023, NU</copyright>
+        <lastBuildDate>Mon, 27 Nov 2023 18:13:15 +0100</lastBuildDate>
+        <ttl>60</ttl>
+        <atom:logo>https://www.nu.nl/algemeenstatic/img/atoms/images/logos/rss-logo-250x40.png</atom:logo>
+        <item>
+            <title>Wapenstilstand tussen Israël en Hamas met twee dagen verlengd</title>
+            <link>
+                https://www.nu.nl/midden-oostenconflict/6291490/wapenstilstand-tussen-israel-en-hamas-met-twee-dagen-verlengd.html</link>
+            <description>Het staakt-het-vuren tussen Israël en Hamas wordt met twee dagen verlengd.
+                De wapenstilstand zou maandag na vier dagen aflopen, maar de twee partijen zijn tot
+                een nieuw akkoord gekomen.</description>
+            <pubDate>Mon, 27 Nov 2023 18:13:15 +0100</pubDate>
+            <guid isPermaLink="false">https://www.nu.nl/-/6291490/</guid>
+            <enclosure length="0" type="image/jpeg"
+                url="https://media.nu.nl/m/0qfxq22a6pn6_sqr256.jpg/wapenstilstand-tussen-israel-en-hamas-met-twee-dagen-verlengd.jpg"></enclosure>
+            <category>Algemeen</category>
+            <category>Buitenland</category>
+            <category>Oorlog Israël en Hamas</category>
+            <category>Binnen- en buitenland</category>
+            <dc:creator>onze nieuwsredactie</dc:creator>
+            <dc:rights>copyright photo: AFP</dc:rights>
+        </item>
+        <item>
+            <title>PVV wil voormalig minister Ronald Plasterk als nieuwe verkenner</title>
+            <link>
+                https://www.nu.nl/formatie-2023/6291503/pvv-wil-voormalig-minister-ronald-plasterk-als-nieuwe-verkenner.html</link>
+            <description>Voormalig PvdA-minister Ronald Plasterk is de beoogde nieuwe verkenner voor
+                de kabinetsformatie. Plasterk maakt zich de afgelopen tijd populair bij rechtse
+                politici en opiniemakers. Eerste Kamerlid Gom van Strien stapte maandagochtend op
+                als verkenner na beschuldigingen van fraude.</description>
+            <pubDate>Mon, 27 Nov 2023 16:59:50 +0100</pubDate>
+            <guid isPermaLink="false">https://www.nu.nl/-/6291503/</guid>
+            <enclosure length="0" type="image/jpeg"
+                url="https://media.nu.nl/m/kwbxs0maalo5_sqr256.jpg/pvv-wil-voormalig-minister-ronald-plasterk-als-nieuwe-verkenner.jpg"></enclosure>
+            <category>Algemeen</category>
+            <category>Politiek</category>
+            <category>Formatie 2023</category>
+            <dc:creator>onze nieuwsredactie</dc:creator>
+            <dc:rights>copyright photo: ANP</dc:rights>
+            <atom:link
+                href="https://nu.nl/formatie-2023/6291494/van-strien-pvv-stapt-op-nieuwe-verkenner-waarschijnlijk-dinsdag-bekend.html"
+                rel="related"
+                title="Van Strien (PVV) stapt op, nieuwe verkenner waarschijnlijk dinsdag bekend"
+                type="text/html"></atom:link>
+            <atom:link
+                href="https://nu.nl/politiek/6290657/nu-de-stemmen-zijn-geteld-moeten-we-formeren-maar-hoe.html"
+                rel="related" title="Nu de stemmen zijn geteld moeten we formeren, maar hoe?"
+                type="text/html"></atom:link>
+        </item>
+        <item>
+            <title>Rusland wil Finland volgens NAVO ontwrichten met migrantenstroom</title>
+            <link>
+                https://www.nu.nl/buitenland/6291553/rusland-wil-finland-volgens-navo-ontwrichten-met-migrantenstroom.html</link>
+            <description>Rusland probeert Finland onder druk te zetten door het NAVO-land te
+                overspoelen met migranten. Dat zei NAVO-chef Jens Stoltenberg maandag.
+                Tegelijkertijd noemde de Finse premier Petteri Orpo de instroom van vluchtelingen
+                vanuit Rusland "een kwestie van nationale veiligheid".</description>
+            <pubDate>Mon, 27 Nov 2023 16:50:27 +0100</pubDate>
+            <guid isPermaLink="false">https://www.nu.nl/-/6291553/</guid>
+            <enclosure length="0" type="image/jpeg"
+                url="https://media.nu.nl/m/7jcxipoa8sc9_sqr256.jpg/rusland-wil-finland-volgens-navo-ontwrichten-met-migrantenstroom.jpg"></enclosure>
+            <category>Algemeen</category>
+            <category>Buitenland</category>
+            <dc:creator>Joost ter Bogt</dc:creator>
+            <dc:rights>copyright photo: AFP</dc:rights>
+            <atom:link
+                href="https://nu.nl/buitenland/6290863/finland-sluit-bijna-alle-grensovergangen-met-rusland-vanwege-migrantenstroom.html"
+                rel="related"
+                title="Finland sluit bijna alle grensovergangen met Rusland vanwege migrantenstroom"
+                type="text/html"></atom:link>
+            <atom:link
+                href="https://nu.nl/buitenland/6290532/vier-finse-grensovergangen-met-rusland-dicht-na-migrantenstroom-dit-speelt-er.html"
+                rel="related"
+                title="Vier Finse grensovergangen met Rusland dicht na migrantenstroom: dit speelt er"
+                type="text/html"></atom:link>
+            <atom:link
+                href="https://nu.nl/buitenland/6290503/rusland-ontkent-migrantenstroom-naar-finland-te-creeren-en-hekelt-finse-reactie.html"
+                rel="related"
+                title="Rusland ontkent migrantenstroom naar Finland te creëren en hekelt Finse reactie"
+                type="text/html"></atom:link>
+            <atom:link
+                href="https://nu.nl/buitenland/6289998/finland-gooit-vier-grensovergangen-met-rusland-dicht-vanwege-migranten.html"
+                rel="related"
+                title="Finland gooit vier grensovergangen met Rusland dicht vanwege migranten"
+                type="text/html"></atom:link>
+            <atom:link
+                href="https://nu.nl/buitenland/6289718/finland-beschuldigt-rusland-van-hulp-aan-asielzoekers-bij-oversteken-grens.html"
+                rel="related"
+                title="Finland beschuldigt Rusland van hulp aan asielzoekers bij oversteken grens"
+                type="text/html"></atom:link>
+        </item>
+        <item>
+            <title>Voorzitter Jan Smit moet van raad van commissarissen weg bij FC Volendam</title>
+            <link>
+                https://www.nu.nl/voetbal/6291551/voorzitter-jan-smit-moet-van-raad-van-commissarissen-weg-bij-fc-volendam.html</link>
+            <description>Jan Smit moet vertrekken als voorzitter van FC Volendam. Dat maakte de
+                37-jarige zanger maandag bekend op Instagram. Smit zou moeten vertrekken van de raad
+                van commissarissen (rvc).</description>
+            <pubDate>Mon, 27 Nov 2023 16:54:22 +0100</pubDate>
+            <guid isPermaLink="false">https://www.nu.nl/-/6291551/</guid>
+            <enclosure length="0" type="image/jpeg"
+                url="https://media.nu.nl/m/ac2x5xaa4k2f_sqr256.jpg/voorzitter-jan-smit-moet-van-raad-van-commissarissen-weg-bij-fc-volendam.jpg"></enclosure>
+            <category>Algemeen</category>
+            <category>Sport</category>
+            <category>Voetbal</category>
+            <dc:creator>onze sportredactie</dc:creator>
+            <dc:rights>copyright photo: Pro Shots </dc:rights>
+        </item>
+        <item>
+            <title>Explainer | Hoe leefden de gegijzelden onder Hamas? Dit zeggen familieleden</title>
+            <link>
+                https://www.nu.nl/algemeen/6291570/hoe-leefden-de-gegijzelden-onder-hamas-dit-zeggen-familieleden.html</link>
+            <description>De Israëlische autoriteiten geven niet veel informatie vrij over de
+                omstandigheden waaronder de gegijzelden in Gaza leefden. Hun familieleden doen na de
+                vrijlating wel een boekje open. </description>
+            <pubDate>Mon, 27 Nov 2023 17:18:48 +0100</pubDate>
+            <guid isPermaLink="false">https://www.nu.nl/-/6291570/</guid>
+            <enclosure length="0" type="image/jpeg"
+                url="https://media.nu.nl/m/xgaxtx8acq1p_sqr256.jpg/hoe-leefden-de-gegijzelden-onder-hamas-dit-zeggen-familieleden.jpg"></enclosure>
+            <category>Algemeen</category>
+            <category>Oorlog Israël en Hamas</category>
+            <category>Explainers</category>
+            <dc:creator>Roos de Ridder</dc:creator>
+        </item>
+        <item>
+            <title>Strand van Scheveningen heeft er een flinke lading nieuw zand bij gekregen</title>
+            <link>
+                https://www.nu.nl/binnenland/6291547/strand-van-scheveningen-heeft-er-een-flinke-lading-nieuw-zand-bij-gekregen.html</link>
+            <description>Het strand bij Scheveningen is voorzien van een nieuwe laag zand, &lt;a
+                href="https://www.rijkswaterstaat.nl/nieuws/archief/2023/11/strand-van-scheveningen-verstrekt-met-700000-m3-zand"
+                target="_blank"&gt;meldt&lt;/a&gt; Rijkwaterstaat. Het gaat in totaal om 700.000
+                kubieke meter. Volgens de dienst is dat genoeg om Circustheater Scheveningen
+                vijftien keer te vullen.</description>
+            <pubDate>Mon, 27 Nov 2023 17:47:37 +0100</pubDate>
+            <guid isPermaLink="false">https://www.nu.nl/-/6291547/</guid>
+            <enclosure length="0" type="image/jpeg"
+                url="https://media.nu.nl/m/tnxxuuaa0ju0_sqr256.jpg/strand-van-scheveningen-heeft-er-een-flinke-lading-nieuw-zand-bij-gekregen.jpg"></enclosure>
+            <category>Algemeen</category>
+            <category>Binnenland</category>
+            <dc:creator>onze nieuwsredactie</dc:creator>
+            <dc:rights>copyright photo: Getty Images</dc:rights>
+        </item>
+        <item>
+            <title>Ongehoord Nederland behoudt vergunning en mag blijven uitzenden</title>
+            <link>
+                https://www.nu.nl/media/6291560/ongehoord-nederland-behoudt-vergunning-en-mag-blijven-uitzenden.html</link>
+            <description>Ongehoord Nederland blijft voorlopig in de lucht. Staatssecretaris Gunay
+                Uslu (Media) heeft besloten dat de aspirant-omroep de vergunning behoudt. Daarmee
+                legt Uslu een verzoek van de NPO om de voorlopige erkenning van ON! in te trekken,
+                naast zich neer.</description>
+            <pubDate>Mon, 27 Nov 2023 16:59:17 +0100</pubDate>
+            <guid isPermaLink="false">https://www.nu.nl/-/6291560/</guid>
+            <enclosure length="0" type="image/jpeg"
+                url="https://media.nu.nl/m/hutxaecagpv2_sqr256.jpg/ongehoord-nederland-behoudt-vergunning-en-mag-blijven-uitzenden.jpg"></enclosure>
+            <category>Algemeen</category>
+            <category>Media</category>
+            <category>Media en Cultuur</category>
+            <dc:creator>onze entertainmentredactie</dc:creator>
+            <dc:rights>copyright photo: ANP</dc:rights>
+        </item>
+        <item>
+            <title>In 100 woorden | Hoe wordt een nieuwe verkenner gekozen?</title>
+            <link>
+                https://www.nu.nl/gebaseerd-op-jullie-vragen/6291517/hoe-wordt-een-nieuwe-verkenner-gekozen.html</link>
+            <description>Ronald Plasterk is de beoogde opvolger van de opgestapte Gom van Strien als
+                verkenner van een nieuwe coalitie. Op ons reactieplatform NUjij vroegen lezers zich
+                af hoe een nieuwe verkenner wordt gekozen. Politiek verslaggever Priscilla Slomp
+                legt uit hoe dit proces gaat.</description>
+            <pubDate>Mon, 27 Nov 2023 17:01:10 +0100</pubDate>
+            <guid isPermaLink="false">https://www.nu.nl/-/6291517/</guid>
+            <enclosure length="0" type="image/jpeg"
+                url="https://media.nu.nl/m/9aoxlygaquf7_sqr256.jpg/hoe-wordt-een-nieuwe-verkenner-gekozen.jpg"></enclosure>
+            <category>Algemeen</category>
+            <category>Politiek</category>
+            <category>NUjij</category>
+            <category>login-vereist</category>
+            <category>Gebaseerd op NUjij</category>
+            <category>Formatie 2023</category>
+            <dc:creator>Lily Nypels</dc:creator>
+        </item>
+        <item>
+            <title>Man niet vervolgd voor fatale schietpartij Vinkeveen, handelde uit
+                zelfverdediging</title>
+            <link>
+                https://www.nu.nl/binnenland/6291549/man-niet-vervolgd-voor-fatale-schietpartij-vinkeveen-handelde-uit-zelfverdediging.html</link>
+            <description>Valengino M,. die in maart 2022 in Vinkeveen een 27-jarige man doodschoot,
+                handelde uit noodweer. Het slachtoffer probeerde M. te liquideren. De dood valt hem
+                dus niet aan te rekenen, oordeelt de rechtbank in Utrecht. M. wordt ontslagen van
+                rechtsvervolging.</description>
+            <pubDate>Mon, 27 Nov 2023 16:12:19 +0100</pubDate>
+            <guid isPermaLink="false">https://www.nu.nl/-/6291549/</guid>
+            <enclosure length="0" type="image/jpeg"
+                url="https://media.nu.nl/m/f82xuk4a97gm_sqr256.jpg/man-niet-vervolgd-voor-fatale-schietpartij-vinkeveen-handelde-uit-zelfverdediging.jpg"></enclosure>
+            <category>Algemeen</category>
+            <category>Binnenland</category>
+            <category>Binnen- en buitenland</category>
+            <dc:creator>onze nieuwsredactie</dc:creator>
+            <dc:rights>copyright photo: ANP</dc:rights>
+            <atom:link
+                href="https://nu.nl/binnenland/6136610/elf-jaar-cel-voor-rico-de-chileen-voor-leiderschap-moordorganisatie.html"
+                rel="related"
+                title="Elf jaar cel voor 'Rico de Chileen' voor leiderschap moordorganisatie"
+                type="text/html"></atom:link>
+        </item>
+        <item>
+            <title>Chemours-afval uit Nederland bedreigt gezondheid in VS: VN eist verklaring</title>
+            <link>
+                https://www.nu.nl/economie/6291532/chemours-afval-uit-nederland-bedreigt-gezondheid-in-vs-vn-eist-verklaring.html</link>
+            <description>De Verenigde Naties hebben opheldering gevraagd aan de Nederlandse overheid
+                in het pfas-schandaal rondom Chemours. Afvalwater wordt vanuit de fabriek in
+                Dordrecht naar een Chemours-vestiging in de Amerikaanse staat North Carolina
+                verscheept, waar het de gezondheid van de bevolking zou schaden.</description>
+            <pubDate>Mon, 27 Nov 2023 15:43:52 +0100</pubDate>
+            <guid isPermaLink="false">https://www.nu.nl/-/6291532/</guid>
+            <enclosure length="0" type="image/jpeg"
+                url="https://media.nu.nl/m/lkxx78xa9vro_sqr256.jpg/chemours-afval-uit-nederland-bedreigt-gezondheid-in-vs-vn-eist-verklaring.jpg"></enclosure>
+            <category>Economie</category>
+            <category>Algemeen</category>
+            <dc:creator>Hanna Ozinga</dc:creator>
+            <dc:rights>copyright photo: ANP</dc:rights>
+            <atom:link
+                href="https://nu.nl/economie/6291155/chemours-vecht-opgelegde-dwangsom-aan-bij-rechter.html"
+                rel="related" title="Chemours vecht opgelegde dwangsom aan bij rechter"
+                type="text/html"></atom:link>
+            <atom:link
+                href="https://nu.nl/binnenland/6285967/chemours-top-riskeert-celstraf-en-andere-antwoorden-over-om-onderzoek.html"
+                rel="related"
+                title="Chemours-top riskeert celstraf en andere antwoorden over OM-onderzoek"
+                type="text/html"></atom:link>
+            <atom:link
+                href="https://nu.nl/klimaat/6285930/chemiebedrijf-chemours-wordt-strafrechtelijk-onderzocht-vanwege-vervuiling.html"
+                rel="related"
+                title="Chemiebedrijf Chemours wordt strafrechtelijk onderzocht vanwege vervuiling"
+                type="text/html"></atom:link>
+        </item>
+        <item>
+            <title>Doden in Rusland en de Krim, stroomstoringen in Oekraïne door noodweer</title>
+            <link>
+                https://www.nu.nl/buitenland/6291541/doden-in-rusland-en-de-krim-stroomstoringen-in-oekraine-door-noodweer.html</link>
+            <description>Meerdere mensen zijn omgekomen door noodweer in Rusland en op de Krim. In
+                Oekraïne zitten volgens het ministerie van Binnenlandse Zaken meer dan 2000 dorpen
+                en steden zonder elektriciteit. Op de Krim zouden een half miljoen mensen geen
+                stroom hebben.</description>
+            <pubDate>Mon, 27 Nov 2023 14:41:42 +0100</pubDate>
+            <guid isPermaLink="false">https://www.nu.nl/-/6291541/</guid>
+            <enclosure length="0" type="image/jpeg"
+                url="https://media.nu.nl/m/z57xxjaant6e_sqr256.jpg/doden-in-rusland-en-de-krim-stroomstoringen-in-oekraine-door-noodweer.jpg"></enclosure>
+            <category>Algemeen</category>
+            <category>Buitenland</category>
+            <category>Binnen- en buitenland</category>
+            <dc:creator>onze nieuwsredactie</dc:creator>
+            <dc:rights>copyright photo: Man loopt door de sneeuw in Odesa, Getty Images</dc:rights>
+        </item>
+        <item>
+            <title>Video | Wielrenner viert feest, maar gaat onderuit voor de eindstreep</title>
+            <link>
+                https://www.nu.nl/algemeen/6291535/wielrenner-viert-feest-maar-gaat-onderuit-voor-de-eindstreep.html</link>
+            <description>De winst van de ronde van Guatemala was al binnen voor Gerson Toc, maar de
+                rit naar de eindstreep kreeg een andere wending voor de Guatemalaan.</description>
+            <pubDate>Mon, 27 Nov 2023 13:52:28 +0100</pubDate>
+            <guid isPermaLink="false">https://www.nu.nl/-/6291535/</guid>
+            <enclosure length="0" type="image/jpeg"
+                url="https://media.nu.nl/m/dofxahsaczyy_sqr256.jpg/wielrenner-viert-feest-maar-gaat-onderuit-voor-de-eindstreep.jpg"></enclosure>
+            <category>Algemeen</category>
+            <category>Video's</category>
+            <dc:creator>onze videoredactie</dc:creator>
+            <dc:rights>copyright photo: Videostill</dc:rights>
+        </item>
+        <item>
+            <title>Politie vermoedt toch misdrijf en pakt man op wegens dood Cas Steenbergen</title>
+            <link>
+                https://www.nu.nl/binnenland/6291538/politie-vermoedt-toch-misdrijf-en-pakt-man-op-wegens-dood-cas-steenbergen.html</link>
+            <description>De politie heeft maandagochtend een twintigjarige verdachte aangehouden in
+                het onderzoek naar de dood van Cas Steenbergen. In eerste instantie ging de politie
+                uit van een noodlottig ongeval, maar ze heropende de zaak toen nieuwe informatie
+                binnenkwam.</description>
+            <pubDate>Mon, 27 Nov 2023 15:49:11 +0100</pubDate>
+            <guid isPermaLink="false">https://www.nu.nl/-/6291538/</guid>
+            <enclosure length="0" type="image/jpeg"
+                url="https://media.nu.nl/m/e8bxkqoavxhf_sqr256.jpg/politie-vermoedt-toch-misdrijf-en-pakt-man-op-wegens-dood-cas-steenbergen.jpg"></enclosure>
+            <category>Algemeen</category>
+            <category>Binnenland</category>
+            <category>Binnen- en buitenland</category>
+            <dc:creator>onze nieuwsredactie</dc:creator>
+            <dc:rights>copyright photo: FTP</dc:rights>
+        </item>
+        <item>
+            <title>Verlenging gevechtspauze Israël en Hamas volgens Egypte en Qatar in zicht</title>
+            <link>
+                https://www.nu.nl/midden-oostenconflict/6291558/verlenging-gevechtspauze-israel-en-hamas-volgens-egypte-en-qatar-in-zicht.html</link>
+            <description>De vierdaagse gevechtspauze tussen Israël en Hamas loopt in principe
+                maandag af. Egypte en Qatar zeggen dat een verlenging van twee dagen in zicht is,
+                maar wel onder voorwaarden. Dit is de stand van zaken in het conflictgebied.</description>
+            <pubDate>Mon, 27 Nov 2023 17:27:06 +0100</pubDate>
+            <guid isPermaLink="false">https://www.nu.nl/-/6291558/</guid>
+            <enclosure length="0" type="image/jpeg"
+                url="https://media.nu.nl/m/4z2xeiea5c0j_sqr256.jpg/verlenging-gevechtspauze-israel-en-hamas-volgens-egypte-en-qatar-in-zicht.jpg"></enclosure>
+            <category>Algemeen</category>
+            <category>Buitenland</category>
+            <category>Oorlog Israël en Hamas</category>
+            <category>Binnen- en buitenland</category>
+            <dc:creator>onze nieuwsredactie</dc:creator>
+            <dc:rights>copyright photo: AFP</dc:rights>
+        </item>
+        <item>
+            <title>Van der Voort mist voor het eerst sinds 2001 WK darts na mislukte kwalificatie</title>
+            <link>
+                https://www.nu.nl/darts/6291544/van-der-voort-mist-voor-het-eerst-sinds-2001-wk-darts-na-mislukte-kwalificatie.html</link>
+            <description>Vincent van der Voort ontbreekt volgende maand voor het eerst sinds 2001 op
+                het WK darts. De 47-jarige Nederlander slaagde er maandag op het laatste
+                kwalificatietoernooi niet in zich voor de 23ste achtereenvolgende keer te plaatsen.
+                Martijn Kleermaker gooide voorlopig zijn laatste pijlen.</description>
+            <pubDate>Mon, 27 Nov 2023 16:27:49 +0100</pubDate>
+            <guid isPermaLink="false">https://www.nu.nl/-/6291544/</guid>
+            <enclosure length="0" type="image/jpeg"
+                url="https://media.nu.nl/m/xbsxt8bassbx_sqr256.jpg/van-der-voort-mist-voor-het-eerst-sinds-2001-wk-darts-na-mislukte-kwalificatie.jpg"></enclosure>
+            <category>Algemeen</category>
+            <category>Sport</category>
+            <category>Darts</category>
+            <dc:creator>onze sportredactie</dc:creator>
+            <dc:rights>copyright photo: Getty Images</dc:rights>
+            <atom:link
+                href="https://nu.nl/darts/6291483/humphries-droomde-van-winst-op-van-gerwen-jaren-geleden-won-hij-alles.html"
+                rel="related"
+                title="Humphries droomde van winst op Van Gerwen: 'Jaren geleden won hij alles'"
+                type="text/html"></atom:link>
+            <atom:link
+                href="https://nu.nl/darts/6291469/van-gerwen-grijpt-ondanks-negendarter-naast-players-championship-finals-titel.html"
+                rel="related"
+                title="Van Gerwen grijpt ondanks negendarter naast Players Championship Finals-titel"
+                type="text/html"></atom:link>
+        </item>
+        <item>
+            <title>Oproep | Wat wil je weten over menstruatieklachten? Stel hier al je vragen</title>
+            <link>
+                https://www.nu.nl/vragenoproep/6291516/wat-wil-je-weten-over-menstruatieklachten-stel-hier-al-je-vragen.html</link>
+            <description>Iedere maand last van zeurende hoofdpijn of krampen tijdens je
+                ongesteldheid? Vraag je je af hoe het zit met de duur van je cyclus en of er zoiets
+                als een 'normale' menstruatie bestaat? Stel hier al je vragen over
+                menstruatieklachten.</description>
+            <pubDate>Mon, 27 Nov 2023 13:43:06 +0100</pubDate>
+            <guid isPermaLink="false">https://www.nu.nl/-/6291516/</guid>
+            <enclosure length="0" type="image/jpeg"
+                url="https://media.nu.nl/m/385xzznamob5_sqr256.jpg/wat-wil-je-weten-over-menstruatieklachten-stel-hier-al-je-vragen.jpg"></enclosure>
+            <category>Algemeen</category>
+            <category>NUjij</category>
+            <category>login-vereist</category>
+            <category>Oproep</category>
+            <category>Slimmer leven</category>
+            <dc:creator>onze interactieredactie</dc:creator>
+            <dc:rights>copyright photo: Getty Images</dc:rights>
+            <atom:link
+                href="https://nu.nl/slimmer-leven/6291039/wanneer-en-hoe-onthul-je-het-sinterklaasgeheim.html"
+                rel="related" title="Wanneer en hoe onthul je het Sinterklaasgeheim?"
+                type="text/html"></atom:link>
+            <atom:link
+                href="https://nu.nl/slimmer-leven/6290962/dit-kun-je-doen-voor-een-ander-die-eenzaam-is.html"
+                rel="related" title="Dit kun je doen voor een ander die eenzaam is" type="text/html"></atom:link>
+            <atom:link
+                href="https://nu.nl/economie/6291049/zo-krik-je-het-energielabel-van-je-woning-op.html"
+                rel="related" title="Zo krik je het energielabel van je woning op" type="text/html"></atom:link>
+            <atom:link
+                href="https://nu.nl/slimmer-leven/6290646/je-mail-bijwerken-tijdens-een-overleg-handig-of-niet.html"
+                rel="related" title="Je mail bijwerken tijdens een overleg: handig of niet?"
+                type="text/html"></atom:link>
+        </item>
+        <item>
+            <title>Vanmiddag code geel vanwege sneeuw en gladheid, zware spits verwacht</title>
+            <link>
+                https://www.nu.nl/binnenland/6291531/vanmiddag-code-geel-vanwege-sneeuw-en-gladheid-zware-spits-verwacht.html</link>
+            <description>Maandagmiddag geldt code geel voor een groot deel van het land. Het KNMI
+                waarschuwt voor sneeuw en gladheid in Flevoland, Drenthe, Overijssel, Gelderland,
+                Utrecht, Noord-Brabant en Limburg. Geadviseerd wordt voorzichtig te rijden. De ANWB
+                verwacht een drukke spits.</description>
+            <pubDate>Mon, 27 Nov 2023 17:22:14 +0100</pubDate>
+            <guid isPermaLink="false">https://www.nu.nl/-/6291531/</guid>
+            <enclosure length="0" type="image/jpeg"
+                url="https://media.nu.nl/m/op6xjmfas7er_sqr256.jpg/vanmiddag-code-geel-vanwege-sneeuw-en-gladheid-zware-spits-verwacht.jpg"></enclosure>
+            <category>Algemeen</category>
+            <category>Binnenland</category>
+            <category>Binnen- en buitenland</category>
+            <dc:creator>onze nieuwsredactie</dc:creator>
+            <dc:rights>copyright photo: ANP</dc:rights>
+        </item>
+        <item>
+            <title>Middelbare scholen in Brabantse Oss ontruimd na valse bommelding</title>
+            <link>
+                https://www.nu.nl/binnenland/6291530/middelbare-scholen-in-brabantse-oss-ontruimd-na-valse-bommelding.html</link>
+            <description>Zes middelbare scholen van scholengemeenschap Het Hooghuis in het Brabantse
+                Oss en Heesch zijn maandag ontruimd na een bommelding. Die melding bleek vals te
+                zijn, meldt de politie.</description>
+            <pubDate>Mon, 27 Nov 2023 15:55:48 +0100</pubDate>
+            <guid isPermaLink="false">https://www.nu.nl/-/6291530/</guid>
+            <enclosure length="0" type="image/jpeg"
+                url="https://media.nu.nl/m/5qyx1wuatv19_sqr256.jpg/middelbare-scholen-in-brabantse-oss-ontruimd-na-valse-bommelding.jpg"></enclosure>
+            <category>Algemeen</category>
+            <category>Binnenland</category>
+            <category>Binnen- en buitenland</category>
+            <dc:creator>onze nieuwsredactie</dc:creator>
+            <dc:rights>copyright photo: ANP</dc:rights>
+            <atom:link
+                href="https://nu.nl/buitenland/6291485/tientallen-scholen-in-belgie-maandag-dicht-na-bommelding.html"
+                rel="related" title="Tientallen scholen in België maandag dicht na bommelding"
+                type="text/html"></atom:link>
+        </item>
+        <item>
+            <title>Ziekenhuisserie Medisch Centrum West keert terug met nieuwe reeks</title>
+            <link>
+                https://www.nu.nl/film/6291527/ziekenhuisserie-medisch-centrum-west-keert-terug-met-nieuwe-reeks.html</link>
+            <description>&lt;em&gt;Medisch Centrum West&lt;/em&gt;, dat tussen 1988 en 1994 te zien
+                was bij de TROS, keert bij Talpa terug op televisie. Een nieuwe generatie artsen en
+                verpleegkundigen wordt in de serie gevolgd.</description>
+            <pubDate>Mon, 27 Nov 2023 15:30:59 +0100</pubDate>
+            <guid isPermaLink="false">https://www.nu.nl/-/6291527/</guid>
+            <enclosure length="0" type="image/jpeg"
+                url="https://media.nu.nl/m/orbx1g3ankij_sqr256.jpg/ziekenhuisserie-medisch-centrum-west-keert-terug-met-nieuwe-reeks.jpg"></enclosure>
+            <category>Algemeen</category>
+            <category>Films &amp; Series</category>
+            <category>Media en Cultuur</category>
+            <category>Instagram</category>
+            <dc:creator>onze entertainmentredactie</dc:creator>
+            <dc:rights>copyright photo: ANP</dc:rights>
+        </item>
+        <item>
+            <title>'Groene' triple-20 op WK darts lijkt publiciteitsstunt van PDC</title>
+            <link>
+                https://www.nu.nl/darts/6291521/groene-triple-20-op-wk-darts-lijkt-publiciteitsstunt-van-pdc.html</link>
+            <description>Dartbond PDC repte maandag plotseling over een groene triple-20 op het WK
+                darts, maar alles wijst erop dat het om een publiciteitsstunt gaat. Normaal
+                gesproken is het vakje van de maximale score ook op het WK gewoon rood.</description>
+            <pubDate>Mon, 27 Nov 2023 14:29:23 +0100</pubDate>
+            <guid isPermaLink="false">https://www.nu.nl/-/6291521/</guid>
+            <enclosure length="0" type="image/jpeg"
+                url="https://media.nu.nl/m/m3lxl3iafvyp_sqr256.jpg/groene-triple-20-op-wk-darts-lijkt-publiciteitsstunt-van-pdc.jpg"></enclosure>
+            <category>Algemeen</category>
+            <category>Sport</category>
+            <category>Darts</category>
+            <dc:creator>onze sportredactie</dc:creator>
+            <dc:rights>copyright photo: PDC</dc:rights>
+        </item>
+        <item>
+            <title>Alle mbo's testen stages zonder sollicitatie als middel tegen discriminatie</title>
+            <link>
+                https://www.nu.nl/binnenland/6291020/alle-mbos-testen-stages-zonder-sollicitatie-als-middel-tegen-discriminatie.html</link>
+            <description>Alle 58 ROC's in Nederland experimenteren met de mogelijkheid om stage te
+                lopen zonder te hoeven solliciteren. Hiermee moet stagediscriminatie worden
+                tegengegaan. De eerste resultaten zijn hoopvol.</description>
+            <pubDate>Mon, 27 Nov 2023 15:05:04 +0100</pubDate>
+            <guid isPermaLink="false">https://www.nu.nl/-/6291020/</guid>
+            <enclosure length="0" type="image/jpeg"
+                url="https://media.nu.nl/m/amlxb2padcd3_sqr256.jpg/alle-mbos-testen-stages-zonder-sollicitatie-als-middel-tegen-discriminatie.jpg"></enclosure>
+            <category>Algemeen</category>
+            <category>Binnenland</category>
+            <dc:creator>Afran Groenewoud</dc:creator>
+            <dc:rights>copyright photo: Getty Images</dc:rights>
+            <atom:link
+                href="https://nu.nl/algemeen/6287944/omgang-met-de-melding-doet-mbo-stagiair-nog-meer-pijn-dan-discriminatie-zelf.html"
+                rel="related"
+                title="Omgang met de melding doet mbo-stagiair nog meer pijn dan discriminatie zelf"
+                type="text/html"></atom:link>
+            <atom:link
+                href="https://nu.nl/binnenland/6229295/ministerie-vergeet-onderzoek-op-te-starten-stagediscriminatie-duurt-voort.html"
+                rel="related"
+                title="Ministerie vergeet onderzoek op te starten: stagediscriminatie duurt voort"
+                type="text/html"></atom:link>
+            <atom:link
+                href="https://nu.nl/binnenland/6211981/minister-over-stagediscriminatie-goede-voorbeelden-belangrijker-dan-straf.html"
+                rel="related"
+                title="Minister over stagediscriminatie: 'Goede voorbeelden belangrijker dan straf'"
+                type="text/html"></atom:link>
+        </item>
+        <item>
+            <title>Nederlands museum geeft kunst niet terug aan Krim maar aan Oekraïne</title>
+            <link>
+                https://www.nu.nl/cultuur-overig/6291519/nederlands-museum-geeft-kunst-niet-terug-aan-krim-maar-aan-oekraine.html</link>
+            <description>De kunstvoorwerpen die het Amsterdamse Allard Pierson Museum in 2014 in
+                bruikleen kreeg van vier musea op de Krim zijn overgedragen aan Oekraïne. Daarmee
+                komt een einde aan een langlopende kwestie. Zowel Oekraïne als de Krim-musea wilden
+                de kunst hebben.</description>
+            <pubDate>Mon, 27 Nov 2023 12:25:07 +0100</pubDate>
+            <guid isPermaLink="false">https://www.nu.nl/-/6291519/</guid>
+            <enclosure length="0" type="image/jpeg"
+                url="https://media.nu.nl/m/6jkxu7pahauf_sqr256.jpg/nederlands-museum-geeft-kunst-niet-terug-aan-krim-maar-aan-oekraine.jpg"></enclosure>
+            <category>Algemeen</category>
+            <category>Boek &amp; Cultuur</category>
+            <category>Media en Cultuur</category>
+            <dc:creator>onze nieuwsredactie</dc:creator>
+            <dc:rights>copyright photo: UvA</dc:rights>
+        </item>
+        <item>
+            <title>Stelling van de dag | 'Ik kan me vinden in de protesten tegen de PVV'</title>
+            <link>
+                https://www.nu.nl/stelling/6291424/ik-kan-me-vinden-in-de-protesten-tegen-de-pvv.html</link>
+            <description>&lt;a
+                href="https://www.nu.nl/tweede-kamerverkiezingen-2023/6290900/pvv-wint-verkiezingen-maar-kabinet-wilders-i-is-heel-ver-weg.html"
+                target="_blank"&gt;De PVV won afgelopen woensdag de Tweede
+                Kamerverkiezingen&lt;/a&gt;. Al snel daarna &lt;a
+                href="https://www.nu.nl/formatie-2023/6290910/liveblog-verkiezingen-meerdere-demonstraties-tegen-uitsluiting-na-winst-pvv.html"
+                target="_blank"&gt;trokken talloze demonstranten de straat op om te protesteren
+                tegen de overwinning van de partij&lt;/a&gt;. Vandaag is de stelling: 'Ik kan me
+                vinden in de protesten tegen de PVV.' Wat vind jij van deze protesten? Kun je je er
+                in vinden of niet?</description>
+            <pubDate>Mon, 27 Nov 2023 11:34:55 +0100</pubDate>
+            <guid isPermaLink="false">https://www.nu.nl/-/6291424/</guid>
+            <enclosure length="0" type="image/jpeg"
+                url="https://media.nu.nl/m/d1axiw4asscz_sqr256.jpg/ik-kan-me-vinden-in-de-protesten-tegen-de-pvv.jpg"></enclosure>
+            <category>Algemeen</category>
+            <category>Politiek</category>
+            <category>Uitgelicht</category>
+            <category>login-vereist</category>
+            <category>Stelling en Praat Mee</category>
+            <category>Tweede Kamerverkiezingen 2023</category>
+            <dc:creator>onze interactieredactie</dc:creator>
+            <atom:link
+                href="https://nu.nl/politiek/6291243/yesilgoz-houdt-vol-vvd-niet-in-kabinet-kiezer-geeft-aan-dat-het-anders-moet.html"
+                rel="related"
+                title="Yesilgöz houdt vol: VVD niet in kabinet, 'kiezer geeft aan dat het anders moet'"
+                type="text/html"></atom:link>
+            <atom:link
+                href="https://nu.nl/politiek/6291137/eerste-kamerlid-gom-van-strien-pvv-gaat-aan-de-slag-als-verkenner.html"
+                rel="related"
+                title="Eerste Kamerlid Gom van Strien (PVV) gaat aan de slag als verkenner"
+                type="text/html"></atom:link>
+            <atom:link
+                href="https://nu.nl/tweede-kamerverkiezingen-2023/6291034/overwinning-pvv-komt-vooral-door-kapitale-fout-van-vvd.html"
+                rel="related" title="Overwinning PVV komt vooral door 'kapitale fout' van VVD"
+                type="text/html"></atom:link>
+            <atom:link
+                href="https://nu.nl/videos/6290921/pvv-wint-verkiezingen-welke-coalities-zijn-mogelijk.html"
+                rel="related" title="PVV wint verkiezingen: welke coalities zijn mogelijk?"
+                type="text/html"></atom:link>
+            <atom:link
+                href="https://nu.nl/formatie-2023/6290910/liveblog-verkiezingen-meerdere-demonstraties-tegen-uitsluiting-na-winst-pvv.html"
+                rel="related"
+                title="Liveblog verkiezingen | Meerdere demonstraties tegen 'uitsluiting' na winst PVV"
+                type="text/html"></atom:link>
+        </item>
+        <item>
+            <title>Vrijspraak voor brandstichting in Amsterdamse containerwoningen</title>
+            <link>
+                https://www.nu.nl/binnenland/6291513/vrijspraak-voor-brandstichting-in-amsterdamse-containerwoningen.html</link>
+            <description>De 28-jarige man die werd verdacht van brandstichting in Amsterdamse
+                containerwoningen vorig jaar november is vrijgesproken. Volgens de rechtbank is niet
+                bewezen dat hij de brand heeft gesticht.</description>
+            <pubDate>Mon, 27 Nov 2023 11:11:19 +0100</pubDate>
+            <guid isPermaLink="false">https://www.nu.nl/-/6291513/</guid>
+            <enclosure length="0" type="image/jpeg"
+                url="https://media.nu.nl/m/3ryxprua6ye4_sqr256.jpg/vrijspraak-voor-brandstichting-in-amsterdamse-containerwoningen.jpg"></enclosure>
+            <category>Algemeen</category>
+            <category>Binnenland</category>
+            <category>Binnen- en buitenland</category>
+            <dc:creator>onze nieuwsredactie</dc:creator>
+            <dc:rights>copyright photo: ANP</dc:rights>
+            <atom:link
+                href="https://nu.nl/amsterdam/6237386/inzamelingsactie-voor-bewoners-riekerhaven-groot-succes-we-zitten-meer-dan-goed.html"
+                rel="related"
+                title='Inzamelingsactie voor bewoners Riekerhaven groot succes: "We zitten meer dan goed"'
+                type="text/html"></atom:link>
+            <atom:link
+                href="https://nu.nl/amsterdam/6236421/bewoners-riekerhaven-starten-crowdfunding-voor-buren-die-alles-zijn-kwijtgeraakt.html"
+                rel="related"
+                title="Bewoners Riekerhaven starten crowdfunding voor buren die alles zijn kwijtgeraakt"
+                type="text/html"></atom:link>
+            <atom:link
+                href="https://nu.nl/binnenland/6235846/deel-van-amsterdams-appartementencomplex-ingestort-door-brand.html"
+                rel="related" title="Deel van Amsterdams appartementencomplex ingestort door brand"
+                type="text/html"></atom:link>
+        </item>
+        <item>
+            <title>Gemeentelijke zorgverzekering in de ene stad veel duurder dan in de andere</title>
+            <link>
+                https://www.nu.nl/economie/6291505/gemeentelijke-zorgverzekering-in-de-ene-stad-veel-duurder-dan-in-de-andere.html</link>
+            <description>Als je een zorgverzekering afsluit via de gemeente ben je in de ene plaats
+                soms honderden euro's per jaar duurder uit dan in de andere. Dat blijkt uit een
+                vergelijking van Geld.nl. Ruim 700.000 Nederlanders verzekeren zich voor zorgkosten
+                via de gemeente.</description>
+            <pubDate>Mon, 27 Nov 2023 11:10:59 +0100</pubDate>
+            <guid isPermaLink="false">https://www.nu.nl/-/6291505/</guid>
+            <enclosure length="0" type="image/jpeg"
+                url="https://media.nu.nl/m/76qxlmiakakp_sqr256.jpg/gemeentelijke-zorgverzekering-in-de-ene-stad-veel-duurder-dan-in-de-andere.jpg"></enclosure>
+            <category>Economie</category>
+            <category>Algemeen</category>
+            <dc:creator>Tom van Gurp</dc:creator>
+            <dc:rights>copyright photo: Getty Images</dc:rights>
+        </item>
+        <item>
+            <title>NU+ | Wie is dolverliefd, wie blijft alleen achter? Zo liep 't af in Boer zoekt
+                Vrouw</title>
+            <link>
+                https://www.nu.nl/achterklap/6291498/wie-is-dolverliefd-wie-blijft-alleen-achter-zo-liep-t-af-in-boer-zoekt-vrouw.html</link>
+            <description>Na de reünieaflevering van zondagavond is het duidelijk hoe het alle
+                deelnemers van &lt;em&gt;Boer zoekt Vrouw&lt;/em&gt; in de liefde vergaat. En dat
+                leverde nogal wat verrassingen op. Let op: dit bericht bevat spoilers.</description>
+            <pubDate>Mon, 27 Nov 2023 13:45:00 +0100</pubDate>
+            <guid isPermaLink="false">https://www.nu.nl/-/6291498/</guid>
+            <enclosure length="0" type="image/jpeg"
+                url="https://media.nu.nl/m/p5exxbrayp90_sqr256.jpg/wie-is-dolverliefd-wie-blijft-alleen-achter-zo-liep-t-af-in-boer-zoekt-vrouw.jpg"></enclosure>
+            <category>Algemeen</category>
+            <category>Achterklap</category>
+            <category>login-vereist</category>
+            <category>NUplus</category>
+            <dc:creator>Danja Koeleman</dc:creator>
+            <dc:rights>copyright photo: KRO-NCRV/Linelle Deunk</dc:rights>
+            <atom:link
+                href="https://nu.nl/achterklap/6291168/annemiek-koekoek-van-boer-zoekt-vrouw-in-verwachting-van-eerste-kind.html"
+                rel="related"
+                title="Annemiek Koekoek van Boer zoekt Vrouw in verwachting van eerste kind"
+                type="text/html"></atom:link>
+            <atom:link
+                href="https://nu.nl/achterklap/6266577/steffi-en-roel-uit-boer-zoekt-vrouw-ouders-geworden-van-zoontje-jop.html"
+                rel="related"
+                title="Steffi en Roel uit Boer zoekt Vrouw ouders geworden van zoontje Jop"
+                type="text/html"></atom:link>
+            <atom:link
+                href="https://nu.nl/achterklap/6260810/boer-zoekt-vrouw-boerin-bertie-en-vriendin-rosita-gaan-trouwen.html"
+                rel="related" title="Boer zoekt Vrouw-boerin Bertie en vriendin Rosita gaan trouwen"
+                type="text/html"></atom:link>
+        </item>
+        <item>
+            <title>Websites ziekenhuizen niet toegankelijk voor mensen met beperking</title>
+            <link>
+                https://www.nu.nl/tech/6291317/websites-ziekenhuizen-niet-toegankelijk-voor-mensen-met-beperking.html</link>
+            <description>Websites van Nederlandse ziekenhuizen zijn niet toegankelijk voor mensen
+                met een beperking. Dat betekent dat een kwart van de Nederlanders online geen
+                afspraak kan maken of medische informatie kan krijgen.</description>
+            <pubDate>Mon, 27 Nov 2023 10:14:33 +0100</pubDate>
+            <guid isPermaLink="false">https://www.nu.nl/-/6291317/</guid>
+            <enclosure length="0" type="image/jpeg"
+                url="https://media.nu.nl/m/k8rxgy2ah1eo_sqr256.jpg/websites-ziekenhuizen-niet-toegankelijk-voor-mensen-met-beperking.jpg"></enclosure>
+            <category>Algemeen</category>
+            <category>Binnenland</category>
+            <category>Tech</category>
+            <category>Tech &amp; Wetenschap</category>
+            <category>Binnen- en buitenland</category>
+            <dc:creator>Linda van Beest</dc:creator>
+            <dc:rights>copyright photo: Getty Images</dc:rights>
+        </item>
+        <item>
+            <title>Van Strien (PVV) stapt op, nieuwe verkenner waarschijnlijk dinsdag bekend</title>
+            <link>
+                https://www.nu.nl/formatie-2023/6291494/van-strien-pvv-stapt-op-nieuwe-verkenner-waarschijnlijk-dinsdag-bekend.html</link>
+            <description>Eerste Kamerlid Gom van Strien (PVV) legt zijn taken als verkenner per
+                direct neer. De senator van de partij van Geert Wilders kwam afgelopen weekend in
+                opspraak vanwege beschuldigingen van fraude. Wilders heeft een nieuwe verkenner op
+                het oog en hoopt deze persoon dinsdag voor te dragen.</description>
+            <pubDate>Mon, 27 Nov 2023 17:59:47 +0100</pubDate>
+            <guid isPermaLink="false">https://www.nu.nl/-/6291494/</guid>
+            <enclosure length="0" type="image/jpeg"
+                url="https://media.nu.nl/m/4dqxke8aot0l_sqr256.jpg/van-strien-pvv-stapt-op-nieuwe-verkenner-waarschijnlijk-dinsdag-bekend.jpg"></enclosure>
+            <category>Algemeen</category>
+            <category>Politiek</category>
+            <category>Instagram</category>
+            <category>Veel bekeken</category>
+            <category>Formatie 2023</category>
+            <dc:creator>onze nieuwsredactie</dc:creator>
+            <dc:rights>copyright photo: ANP</dc:rights>
+            <atom:link
+                href="https://nu.nl/formatie-2023/6291434/gom-van-strien-gaat-door-als-verkenner-ondanks-beschuldigingen-van-fraude.html"
+                rel="related"
+                title="Gom van Strien gaat door als verkenner ondanks beschuldigingen van fraude"
+                type="text/html"></atom:link>
+            <atom:link
+                href="https://nu.nl/politiek/6291137/eerste-kamerlid-gom-van-strien-pvv-gaat-aan-de-slag-als-verkenner.html"
+                rel="related"
+                title="Eerste Kamerlid Gom van Strien (PVV) gaat aan de slag als verkenner"
+                type="text/html"></atom:link>
+        </item>
+        <item>
+            <title>Human Rights Watch meldt massamoorden en plunderingen in Soedan</title>
+            <link>
+                https://www.nu.nl/algemeen/6291489/human-rights-watch-meldt-massamoorden-en-plunderingen-in-soedan.html</link>
+            <description>Honderden Soedanese burgers zijn begin november gedood door de Rapid
+                Support Forces (RSF). De manier waarop lijkt op etnische zuivering, zegt Human
+                Rights Watch. De mensenrechtenorganisatie vindt dat de VN-Veiligheidsraad in actie
+                moet komen.</description>
+            <pubDate>Mon, 27 Nov 2023 10:10:16 +0100</pubDate>
+            <guid isPermaLink="false">https://www.nu.nl/-/6291489/</guid>
+            <enclosure length="0" type="image/jpeg"
+                url="https://media.nu.nl/m/iybxfl1a3h8m_sqr256.jpg/human-rights-watch-meldt-massamoorden-en-plunderingen-in-soedan.jpg"></enclosure>
+            <category>Algemeen</category>
+            <category>Buitenland</category>
+            <category>Binnen- en buitenland</category>
+            <dc:creator>onze nieuwsredactie</dc:creator>
+            <dc:rights>copyright photo: Vluchtelingen verzamelen zich rond een veldziekenhuis in
+                Tsjaad in augustus, AP</dc:rights>
+            <atom:link
+                href="https://nu.nl/buitenland/6288453/zeker-35-burgerdoden-bij-explosies-en-een-vuurgevecht-in-soedan.html"
+                rel="related"
+                title="Zeker 35 burgerdoden bij explosies en een vuurgevecht in Soedan"
+                type="text/html"></atom:link>
+            <atom:link
+                href="https://nu.nl/buitenland/6280790/zeker-veertig-doden-bij-nieuwe-luchtaanval-op-markt-in-soedan.html"
+                rel="related" title="Zeker veertig doden bij nieuwe luchtaanval op markt in Soedan"
+                type="text/html"></atom:link>
+        </item>
+        <item>
+            <title>Regen en ongelukken leiden tot drukke ochtendspits, ook problemen op het spoor</title>
+            <link>
+                https://www.nu.nl/binnenland/6291488/regen-en-ongelukken-leiden-tot-drukke-ochtendspits-ook-problemen-op-het-spoor.html</link>
+            <description>Het was maandagochtend erg druk op de weg. Mede door de grote hoeveelheid
+                regen zijn er veel ongelukken gebeurd, meldt Rijkswaterstaat. Ook op het spoor waren
+                er problemen. Zo reden er veel minder treinen tussen Rotterdam Centraal en Schiphol.</description>
+            <pubDate>Mon, 27 Nov 2023 09:58:26 +0100</pubDate>
+            <guid isPermaLink="false">https://www.nu.nl/-/6291488/</guid>
+            <enclosure length="0" type="image/jpeg"
+                url="https://media.nu.nl/m/tayxmxya4gka_sqr256.jpg/regen-en-ongelukken-leiden-tot-drukke-ochtendspits-ook-problemen-op-het-spoor.jpg"></enclosure>
+            <category>Algemeen</category>
+            <category>Binnenland</category>
+            <category>Binnen- en buitenland</category>
+            <dc:creator>onze nieuwsredactie</dc:creator>
+            <dc:rights>copyright photo: ANP</dc:rights>
+        </item>
+    </channel>
+</rss>

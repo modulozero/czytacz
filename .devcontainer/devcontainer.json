@@ -7,20 +7,20 @@
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
 	"features": {
 		"ghcr.io/devcontainers-contrib/features/curl-apt-get:1": {},
-		"ghcr.io/devcontainers-contrib/features/black:2": {},
 		"ghcr.io/devcontainers-contrib/features/poetry:2": {},
-		"ghcr.io/devcontainers-contrib/features/isort:2": {}		
+		"ghcr.io/devcontainers-contrib/features/ruff:1": {},
+		"ghcr.io/devcontainers-contrib/features/mypy:2": {}
 	},
 	"customizations": {
 		"vscode": {
 			"extensions": [
 				"ms-azuretools.vscode-docker",
 				"ms-python.python",
-				"ms-python.vscode-pylance",
-				"ms-python.black-formatter",
-				"ms-python.isort",
 				"mtxr.sqltools",
-				"mtxr.sqltools-driver-pg"
+				"mtxr.sqltools-driver-pg",
+				"redhat.vscode-xml",
+				"charliermarsh.ruff",
+				"ms-python.mypy-type-checker"
 			]
 		}
 	},
@@ -33,12 +33,9 @@
 	// "forwardPorts": [5000, 5432],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "poetry install --no-root"
+	"postCreateCommand": "poetry install --no-root",
 
-	"postStartCommand": [
-		"poetry install --no-root",
-		"git config --global --add safe.directory ${containerWorkspaceFolder}"
-	]
+	"postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}"
 
 	// Configure tool-specific properties.
 	// "customizations": {},

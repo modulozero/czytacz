@@ -1,4 +1,33 @@
+from __future__ import annotations
+
+import datetime
+from typing import Optional
+
 from pydantic import BaseModel
+
+
+class ItemContent(BaseModel):
+    content_type: str
+    value: Optional[str]
+
+
+class ItemBase(BaseModel):
+    item_id: str
+    title: Optional[str]
+    link: Optional[str]
+    author: Optional[str]
+    summary: Optional[str]
+    published: Optional[datetime.datetime]
+    content: list[ItemContent] = []
+
+
+class ItemCreate(ItemBase):
+    pass
+
+
+class Item(ItemBase):
+    class Config:
+        from_attributes = True
 
 
 class FeedBase(BaseModel):
@@ -13,6 +42,8 @@ class FeedCreate(FeedBase):
 class Feed(FeedBase):
     id: int
     user_id: int
+
+    items: list[Item] = []
 
     class Config:
         from_attributes = True

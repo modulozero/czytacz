@@ -12,6 +12,7 @@ class Settings(BaseSettings):
     SQLALCHEMY_DATABASE_URI: Optional[PostgresDsn] = None
 
     @validator("SQLALCHEMY_DATABASE_URI", pre=True)
+    @classmethod
     def assemble_db_connection(cls, v: Optional[str], values: dict[str, Any]) -> Any:
         if isinstance(v, str):
             return v
@@ -26,5 +27,5 @@ class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env")
 
 
-# Flaw in PyLance causes a false positive
+# The type definition seems wrong
 settings = Settings()  # type: ignore
