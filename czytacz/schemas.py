@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import datetime
+import enum
 from typing import Optional
 
 from pydantic import BaseModel
@@ -21,7 +22,7 @@ class ItemBase(BaseModel):
     content: list[ItemContent] = []
 
 
-class ItemCreate(ItemBase):
+class ItemFetched(ItemBase):
     pass
 
 
@@ -47,6 +48,42 @@ class Feed(FeedBase):
 
     class Config:
         from_attributes = True
+
+
+class FeedForFetch(FeedBase):
+    id: int
+    source: str
+    etag: Optional[str]
+    last_modified: Optional[str]
+
+    class Config:
+        from_attributes = True
+
+
+class FeedFetchStatus(enum.Enum):
+    FETCHED = enum.auto()
+    PERMANENT_REDIRECT = enum.auto()
+    NO_CHANGE = enum.auto()
+    GONE = enum.auto()
+    GENERIC_ERROR = enum.auto()
+
+    @property
+    def ok(self) -> bool:
+        """Indicates that feed fetch was okay."""
+        return self in [self.FETCHED, self.PERMANENT_REDIRECT, self.NO_CHANGE]
+
+    @property
+    def update(self) -> bool:
+        """Indicates whether the feed should be updated in any way."""
+        return self in [self.PERMANENT_REDIRECT, self.FETCHED]
+
+
+class FeedFetchResult(BaseModel):
+    source: str
+    status: FeedFetchStatus
+    etag: Optional[str]
+    last_modified: Optional[str]
+    items: list[ItemFetched] = []
 
 
 class UserBase(BaseModel):
