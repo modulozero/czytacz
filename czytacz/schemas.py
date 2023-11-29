@@ -32,7 +32,7 @@ class Item(ItemBase):
 
 
 class FeedBase(BaseModel):
-    name: str
+    name: Optional[str]
     source: str
 
 
@@ -55,6 +55,13 @@ class FeedForFetch(FeedBase):
     source: str
     etag: Optional[str]
     last_modified: Optional[str]
+
+    class Config:
+        from_attributes = True
+
+
+class FeedForList(FeedBase):
+    id: int
 
     class Config:
         from_attributes = True
@@ -86,6 +93,15 @@ class FeedFetchResult(BaseModel):
     items: list[ItemFetched] = []
 
 
+class Token(BaseModel):
+    access_token: str
+    token_type: str
+
+
+class TokenData(BaseModel):
+    username: str | None = None
+
+
 class UserBase(BaseModel):
     email: str
 
@@ -96,7 +112,6 @@ class UserCreate(UserBase):
 
 class User(UserBase):
     id: int
-    feeds: list[Feed] = []
 
     class Config:
         from_attributes = True

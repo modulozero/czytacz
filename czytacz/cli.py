@@ -1,6 +1,6 @@
-from contextlib import contextmanager
-
 import typer
+
+from czytacz.fetcher import fetch_feed_by_id
 
 app = typer.Typer()
 
@@ -14,10 +14,10 @@ def api(reload: bool = True, port: int = 8000):
 
 @app.command()
 def fetch(feed_id: int, force_fetch: bool = False):
-    from czytacz.database import get_db
-    from czytacz.fetcher import fetch_feed_by_id
+    from czytacz.dependencies import get_db_cli
 
-    fetch_feed_by_id(next(get_db()), feed_id, force_fetch=force_fetch)
+    with get_db_cli() as db:
+        fetch_feed_by_id(db, feed_id, force_fetch=force_fetch)
 
 
 if __name__ == "__main__":

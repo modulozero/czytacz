@@ -73,6 +73,25 @@ def fetch_feed(
     )
 
 
+def update_items(db: Session, feed: schemas.Feed, items: list[schemas.ItemFetched]):
+    now = datetime.datetime.now()
+
+    skip_item_ids = (
+        db.execute(
+            select(models.Item.item_id).where(
+                models.Item.feed_id == feed.id,
+                models.Item.item_id.in_(item.item_id for item in items),
+            )
+        )
+        .scalars()
+        .all()
+    )
+
+    for item in items:
+        if item.item_id not in skip_item_ids:
+            feed.items.append(models.Item(**item.model_dump(), first_seen=now))
+
+
 def fetch_feed_by_id(
     db: Session, feed_id: int, force_fetch: bool = False
 ) -> schemas.Feed:
@@ -91,27 +110,12 @@ def fetch_feed_by_id(
         return schemas.Feed.from_orm(feed)
 
     if fetched.status.update:
-        now = datetime.datetime.now()
-
         feed.etag = fetched.etag
         feed.last_modified = fetched.last_modified
         if fetched.status == schemas.FeedFetchStatus.PERMANENT_REDIRECT:
             feed.actual_source = fetched.source
 
-        skip_item_ids = (
-            db.execute(
-                select(models.Item.item_id).where(
-                    models.Item.feed_id == feed_id,
-                    models.Item.item_id.in_(item.item_id for item in fetched.items),
-                )
-            )
-            .scalars()
-            .all()
-        )
-
-        for item in fetched.items:
-            if item.item_id not in skip_item_ids:
-                feed.items.append(models.Item(**item.model_dump(), first_seen=now))
+        update_items(db, feed, fetched.items)
 
     db.add(feed)
     db.commit()

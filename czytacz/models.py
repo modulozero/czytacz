@@ -39,7 +39,9 @@ class Feed(Base):
     actual_source: Mapped[Optional[str]]
 
     user: Mapped[User] = relationship(back_populates="feeds")
-    items: Mapped[list[Item]] = relationship(back_populates="feed")
+    items: Mapped[list[Item]] = relationship(
+        back_populates="feed", cascade="all, delete", passive_deletes=True
+    )
 
     # Used for interaction with the server, and returned as-is to it
     etag: Mapped[Optional[str]]
@@ -55,7 +57,7 @@ class Item(Base):
     __tablename__ = "item"
     __table_args__ = (UniqueConstraint("feed_id", "item_id"),)
     id: Mapped[int] = mapped_column(Integer, primary_key=True)
-    feed_id: Mapped[int] = mapped_column(ForeignKey("feed.id"))
+    feed_id: Mapped[int] = mapped_column(ForeignKey("feed.id", ondelete="CASCADE"))
     feed: Mapped[Feed] = relationship(back_populates="items")
 
     # This is separate from the primary key for the following reasons:
