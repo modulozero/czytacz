@@ -14,6 +14,7 @@ class FeedNotFoundError(Exception):
 
 def process_item(feed_item: Any) -> schemas.ItemFetched:
     published_parsed = feed_item.get("published_parsed")
+    updated_parsed = feed_item.get("updated_parsed")
     return schemas.ItemFetched(
         item_id=feed_item.id,
         title=feed_item.get("title"),
@@ -23,6 +24,11 @@ def process_item(feed_item: Any) -> schemas.ItemFetched:
         published=(
             datetime.datetime(*published_parsed[:6])
             if published_parsed is not None
+            else None
+        ),
+        updated=(
+            datetime.datetime(*updated_parsed[:6])
+            if updated_parsed is not None
             else None
         ),
         content=[
@@ -76,20 +82,38 @@ def fetch_feed(
 def update_items(db: Session, feed: schemas.Feed, items: list[schemas.ItemFetched]):
     now = datetime.datetime.now()
 
-    skip_item_ids = (
-        db.execute(
-            select(models.Item.item_id).where(
+    existing_items = {
+        item.item_id: item
+        for item in db.execute(
+            select(models.Item).where(
                 models.Item.feed_id == feed.id,
                 models.Item.item_id.in_(item.item_id for item in items),
             )
-        )
-        .scalars()
-        .all()
-    )
+        ).scalars()
+    }
 
-    for item in items:
-        if item.item_id not in skip_item_ids:
-            feed.items.append(models.Item(**item.model_dump(), first_seen=now))
+    items_dict = {item.item_id: item for item in items}
+
+    for item_id, item in items_dict.items():
+        if item_id in existing_items:
+            existing = existing_items[item_id]
+            if item.updated is None or item.updated <= existing.updated:
+                continue
+            existing.title = item.title
+            existing.link = item.link
+            existing.author = item.author
+            existing.summary = item.summary
+            existing.content = item.content
+            existing.updated = item.updated if item.updated is not None else now
+            db.add(existing)
+        else:
+            item.updated = item.updated if item.updated is not None else now
+            feed.items.append(
+                models.Item(
+                    **item.model_dump(),
+                    first_seen=now,
+                )
+            )
 
 
 def fetch_feed_by_id(

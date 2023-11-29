@@ -78,3 +78,4 @@ class Item(Base):
     summary: Mapped[Optional[str]]
     published: Mapped[Optional[datetime.datetime]]
     content: Mapped[list[Any]] = mapped_column(JSONB)
+    updated: Mapped[datetime.datetime]

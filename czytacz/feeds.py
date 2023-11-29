@@ -34,7 +34,7 @@ def get_feed(
     items = db.execute(
         select(models.Item)
         .where(models.Item.feed_id == feed.id)
-        .order_by(models.Item.first_seen.desc())
+        .order_by(models.Item.updated.desc())
     ).scalars()
 
     return schemas.Feed(

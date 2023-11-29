@@ -23,10 +23,12 @@ class ItemBase(BaseModel):
 
 
 class ItemFetched(ItemBase):
-    pass
+    updated: Optional[datetime.datetime]
 
 
 class Item(ItemBase):
+    updated: datetime.datetime
+
     class Config:
         from_attributes = True
 

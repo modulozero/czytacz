@@ -33,4 +33,6 @@ on older pydantic than I already had. I happen to quite like SQL Alchemy, so
 I happily moved on.
 
 ## Ideas For Later
-- Feeds with the same user ID
+- Feeds with the same source should be only fetched once
+- If the "updated" field is not present, I don't update the item. This may be 
+  wrong.
