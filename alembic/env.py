@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 from sqlalchemy import engine_from_config, pool
 
 from alembic import context
+import alembic_postgresql_enum  # noqa: F401
 
 load_dotenv()
 

@@ -11,8 +11,8 @@ from czytacz.settings import Settings
 
 
 @lru_cache
-def get_settings():
-    return Settings()
+def get_settings() -> Settings:
+    return Settings() # type: ignore
 
 
 def get_session_factory(settings: Annotated[Settings, Depends(get_settings)]):

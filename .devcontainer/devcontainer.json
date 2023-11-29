@@ -25,16 +25,12 @@
 		}
 	},
 
-	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
-
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// This can be used to network with other containers or the host.
 	// "forwardPorts": [5000, 5432],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "poetry install --no-root",
-
+	"postCreateCommand": "poetry install",
 	"postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}"
 
 	// Configure tool-specific properties.

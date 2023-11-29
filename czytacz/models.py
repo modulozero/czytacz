@@ -7,7 +7,8 @@ from sqlalchemy import ForeignKey, Integer, String, UniqueConstraint
 from sqlalchemy.dialects.postgresql import JSONB
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
-from .database import Base
+from czytacz import FeedStatus
+from czytacz.database import Base
 
 
 class User(Base):
@@ -47,6 +48,8 @@ class Feed(Base):
     etag: Mapped[Optional[str]]
     last_modified: Mapped[Optional[str]]
 
+    status: Mapped[Optional[FeedStatus]]
+    last_fetch: Mapped[Optional[datetime.datetime]]
 
 class Item(Base):
     """An item from a feed.

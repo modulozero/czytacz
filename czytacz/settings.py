@@ -1,10 +1,12 @@
 from typing import Any, Optional
 
-from pydantic import PostgresDsn, validator
+from pydantic import PostgresDsn, validator, AmqpDsn
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class Settings(BaseSettings):
+    RABBITMQ_URI: AmqpDsn
+
     POSTGRES_SERVER: str
     POSTGRES_USER: str
     POSTGRES_PASSWORD: str

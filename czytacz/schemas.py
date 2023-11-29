@@ -2,9 +2,26 @@ from __future__ import annotations
 
 import datetime
 import enum
-from typing import Optional
+from typing import Optional, Annotated
 
-from pydantic import BaseModel
+from pydantic import BaseModel, HttpUrl, AfterValidator
+
+import tldextract
+from czytacz import FeedStatus
+
+
+def ensure_public(url: HttpUrl) -> HttpUrl:
+    # This can be sometimes slow
+    extracted = tldextract.extract(str(url), include_psl_private_domains=True)
+    assert not extracted.is_private, f"{url} is not a public URL"
+    assert bool(extracted.suffix), f"{url} doesn't have a suffix"
+    assert bool(extracted.domain), f"{url} doesn't have a domain"
+    assert bool(extracted.fqdn), f"{url} is not an fqdn"
+
+    return url
+
+
+PublicUrl = Annotated[HttpUrl, AfterValidator(ensure_public)]
 
 
 class ItemContent(BaseModel):
@@ -35,7 +52,7 @@ class Item(ItemBase):
 
 class FeedBase(BaseModel):
     name: Optional[str]
-    source: str
+    source: PublicUrl
 
 
 class FeedCreate(FeedBase):
@@ -45,6 +62,8 @@ class FeedCreate(FeedBase):
 class Feed(FeedBase):
     id: int
     user_id: int
+    status: Optional[FeedStatus]
+    last_fetch: Optional[datetime.datetime]
 
     items: list[Item] = []
 
@@ -54,7 +73,6 @@ class Feed(FeedBase):
 
 class FeedForFetch(FeedBase):
     id: int
-    source: str
     etag: Optional[str]
     last_modified: Optional[str]
 
@@ -64,6 +82,8 @@ class FeedForFetch(FeedBase):
 
 class FeedForList(FeedBase):
     id: int
+    status: FeedStatus
+    last_fetch: datetime.datetime
 
     class Config:
         from_attributes = True
@@ -75,6 +95,7 @@ class FeedFetchStatus(enum.Enum):
     NO_CHANGE = enum.auto()
     GONE = enum.auto()
     GENERIC_ERROR = enum.auto()
+    TRY_LATER = enum.auto()
 
     @property
     def ok(self) -> bool:
@@ -88,7 +109,7 @@ class FeedFetchStatus(enum.Enum):
 
 
 class FeedFetchResult(BaseModel):
-    source: str
+    source: PublicUrl
     status: FeedFetchStatus
     etag: Optional[str]
     last_modified: Optional[str]

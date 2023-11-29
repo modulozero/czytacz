@@ -54,3 +54,19 @@ def delete_feed(
         feeds.delete_user_feed(db, user_id=user.id, feed_id=feed_id)
     except feeds.NotFoundError:
         raise HTTPException(status.HTTP_404_NOT_FOUND)
+
+
+@router.post("/feeds/{feed_id}/force_fetch")
+def force_fetch(
+    db: dependencies.DatabaseSession,
+    user: authentication.RequireUser,
+    feed_id: int,
+):
+    try:
+        feeds.force_fetch(db, user_id=user.id, feed_id=feed_id)
+    except feeds.NotFoundError:
+        raise HTTPException(status.HTTP_404_NOT_FOUND)
+    except feeds.AlreadyFetchingError:
+        raise HTTPException(
+            status.HTTP_503_SERVICE_UNAVAILABLE, detail="Already fetching the feed"
+        )

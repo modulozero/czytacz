@@ -22,6 +22,14 @@ $ poetry install
 $ poetry run czytacz api
 ```
 
+To start the worker, run:
+
+```
+$ poetry install
+# Wait for stuff
+$ poetry run celery -A czytacz.tasks worker --loglevel=INFO -B
+```
+
 ## Notes
 
 I'd probably go with [pip-tools](https://github.com/jazzband/pip-tools) if I
@@ -36,3 +44,7 @@ I happily moved on.
 - Feeds with the same source should be only fetched once
 - If the "updated" field is not present, I don't update the item. This may be 
   wrong.
+- Feedparser is a fairly limited http clients. It would be best to switch to
+  something else, like requests.
+- I haven't really touched the async features of FastAPI. For some database
+  queries that could be a big win.

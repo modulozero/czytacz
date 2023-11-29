@@ -14,6 +14,10 @@ select = ["E4", "E7", "E9", "F", "N", "D2", "D3", "D4"]
 module = "feedparser"
 ignore_missing_imports = true
 
+[[tool.mypy.overrides]]
+module = "alembic_postgresql_enum"
+ignore_missing_imports = true
+
 [tool.poetry.dependencies]
 python = "^3.11"
 fastapi = "^0.104.1"
@@ -26,6 +30,10 @@ python-dotenv = "^1.0.0"
 pydantic-settings = "^2.1.0"
 feedparser = "^6.0.10"
 typer = {extras = ["all"], version = "^0.9.0"}
+celery = "^5.3.6"
+celery-types = "^0.20.0"
+tldextract = "^5.1.1"
+alembic-postgresql-enum = "^0.4.0"
 
 [tool.poetry.scripts]
 czytacz = "czytacz.cli:app"

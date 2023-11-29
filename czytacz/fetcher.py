@@ -5,7 +5,7 @@ import feedparser
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from czytacz import models, schemas
+from czytacz import models, schemas, FeedStatus
 
 
 class FeedNotFoundError(Exception):
@@ -48,17 +48,9 @@ def fetch_feed(
         parsed = feedparser.parse(feed.source)
     else:
         parsed = feedparser.parse(
-            feed.source, etag=feed.etag, modified=feed.last_modified
+            str(feed.source), etag=feed.etag, modified=feed.last_modified
         )
-
-    if parsed.status == 304:
-        return schemas.FeedFetchResult(
-            source=feed.source,
-            status=schemas.FeedFetchStatus.NO_CHANGE,
-            etag=feed.etag,
-            last_modified=feed.last_modified,
-            items=[],
-        )
+    print(parsed.status)
 
     return schemas.FeedFetchResult(
         source=parsed.href,
@@ -71,6 +63,8 @@ def fetch_feed(
             if parsed.status == 410
             else schemas.FeedFetchStatus.PERMANENT_REDIRECT
             if parsed.status == 301
+            else schemas.FeedFetchStatus.TRY_LATER
+            if parsed.status >= 500
             else schemas.FeedFetchStatus.GENERIC_ERROR
             if parsed.status >= 400
             else schemas.FeedFetchStatus.FETCHED
@@ -79,9 +73,7 @@ def fetch_feed(
     )
 
 
-def update_items(db: Session, feed: schemas.Feed, items: list[schemas.ItemFetched]):
-    now = datetime.datetime.now()
-
+def update_items(db: Session, feed: schemas.Feed, items: list[schemas.ItemFetched], now: datetime.datetime):
     existing_items = {
         item.item_id: item
         for item in db.execute(
@@ -123,13 +115,29 @@ def fetch_feed_by_id(
     if feed is None:
         raise FeedNotFoundError()
     feed_for_fetch = schemas.FeedForFetch.from_orm(feed)
-    feed_for_fetch.source = (
+    feed_for_fetch.source = schemas.PublicUrl(
         feed.actual_source if feed.actual_source is not None else feed.source
     )
     fetched = fetch_feed(feed_for_fetch, force_fetch=force_fetch)
 
-    if not fetched.status.ok:
-        raise NotImplementedError("Error handling? I'm no coward!")
+    now = datetime.datetime.now()
+    feed.last_fetch = now
+    
+    if fetched.status == schemas.FeedFetchStatus.GONE:
+        print("Gone!")
+        feed.status = FeedStatus.GONE
+    elif fetched.status == schemas.FeedFetchStatus.TRY_LATER:
+        print("Later!")
+        feed.status = FeedStatus.TRY_LATER
+    elif fetched.status == schemas.FeedFetchStatus.GENERIC_ERROR:
+        print("something odd?")
+        feed.status = FeedStatus.FAILED
+    elif not fetched.status.ok:
+        raise NotImplementedError("Missing error handling")
+    else:
+        feed.status = FeedStatus.OK
+
+
     if not fetched.status.update:
         return schemas.Feed.from_orm(feed)
 
@@ -137,9 +145,10 @@ def fetch_feed_by_id(
         feed.etag = fetched.etag
         feed.last_modified = fetched.last_modified
         if fetched.status == schemas.FeedFetchStatus.PERMANENT_REDIRECT:
-            feed.actual_source = fetched.source
+            feed.actual_source = str(fetched.source)
 
-        update_items(db, feed, fetched.items)
+        update_items(db, feed, fetched.items, now)
+    feed.status = FeedStatus.OK
 
     db.add(feed)
     db.commit()
