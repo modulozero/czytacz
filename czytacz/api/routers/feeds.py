@@ -1,3 +1,4 @@
+from typing import Optional
 from fastapi import APIRouter, HTTPException, status
 
 from czytacz import dependencies, feeds, schemas
@@ -31,12 +32,13 @@ def show_feed(
     db: dependencies.DatabaseSession,
     user: authentication.RequireUser,
     feed_id: int,
+    read: Optional[bool] = None,
     skip: int = 0,
     limit: int = 100,
 ):
     try:
         feed = feeds.get_feed(
-            db, feed_id=feed_id, user_id=user.id, skip=skip, limit=limit
+            db, feed_id=feed_id, user_id=user.id, read=read, skip=skip, limit=limit
         )
     except feeds.NotFoundError:
         raise HTTPException(status.HTTP_404_NOT_FOUND)
@@ -71,6 +73,7 @@ def force_fetch(
             status.HTTP_503_SERVICE_UNAVAILABLE, detail="Already fetching the feed"
         )
 
+
 @router.put("/feeds/{feed_id}/{item_id}")
 def update_item(
     db: dependencies.DatabaseSession,
@@ -83,5 +86,5 @@ def update_item(
         updated_item = feeds.update_item(db, user.id, feed_id, item_id, item)
     except feeds.NotFoundError:
         raise HTTPException(status.HTTP_404_NOT_FOUND)
-    
+
     return updated_item

@@ -1,3 +1,4 @@
+from typing import Optional
 from sqlalchemy import delete, select
 from sqlalchemy.orm import Session
 
@@ -25,7 +26,7 @@ def get_user_feeds(
 
 
 def get_feed(
-    db: Session, user_id: int, feed_id: int, skip: int = 0, limit: int = 100
+    db: Session, user_id: int, feed_id: int, read: Optional[bool] = None, skip: int = 0, limit: int = 100
 ) -> schemas.Feed:
     feed = db.execute(
         select(models.Feed).where(
@@ -35,9 +36,12 @@ def get_feed(
     if feed is None:
         raise NotFoundError()
 
+    items_query = select(models.Item).where(models.Item.feed_id == feed.id)
+    
+    if read is not None:
+        items_query = items_query.where(models.Item.read == read)
     items = db.execute(
-        select(models.Item)
-        .where(models.Item.feed_id == feed.id)
+        items_query
         .order_by(models.Item.updated.desc())
     ).scalars()
 
