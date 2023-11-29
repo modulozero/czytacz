@@ -9,7 +9,7 @@ app = typer.Typer()
 def api(reload: bool = True, port: int = 8000):
     import uvicorn
 
-    uvicorn.run("czytacz.api:app", reload=reload, port=port)
+    uvicorn.run("czytacz.api:app", reload=reload, port=port, host="0.0.0.0")
 
 
 @app.command()

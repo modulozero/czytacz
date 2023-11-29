@@ -7,14 +7,26 @@ An API RSS feed reader, implemented as a recruitment assignment.
 Built from a single code base - to run different components, start different
 scripts.
 
-No RabbitMQ/Celery - they're actually pretty good choices, but I decided to
-keep deployment units quite minimal. This creates extra cost for implementation
-of the service worker, but I'm okay with that.
+Stuck to FastAPI, which slowed me down, but I wanted to try it.
 
 ## To run
 
-For now, no "production" docker container - later I'll add a "production"
-`docker-compose` file.
+To try it out, just use docker-compose. Make sure you have Docker and 
+docker-compose installed, then run:
+```
+$ docker-compose up
+```
+
+After a while, the API should be available at http://localhost:8000/docs.
+Endpoints other than creating a user require HTTP basic authentication -
+there is a button in the top right of the documentation page that lets you
+set ip up, and try out all services interactively.
+
+### Devcontainer
+
+There's also a devcontainer - with more time, I'd get it synchronized with
+the main Dockerfile. In VS Code it should be possible to just connect to it.
+In two separate terminals, run:
 
 ```
 $ poetry install
@@ -22,13 +34,13 @@ $ poetry install
 $ poetry run czytacz api
 ```
 
-To start the worker, run:
-
 ```
 $ poetry install
 # Wait for stuff
 $ poetry run celery -A czytacz.tasks worker --loglevel=INFO -B
 ```
+
+The API will be at http://localhost:8000
 
 ## Notes
 
@@ -40,6 +52,9 @@ I haven't used SQLModel - easy integration is tempting, but it seems to rely
 on older pydantic than I already had. I happen to quite like SQL Alchemy, so
 I happily moved on.
 
+Due to lack of time I didn't do any testing - but serialization and database
+access could definitely benefit from it. 
+
 ## Ideas For Later
 - Feeds with the same source should be only fetched once
 - If the "updated" field is not present, I don't update the item. This may be 
@@ -48,3 +63,4 @@ I happily moved on.
   something else, like requests.
 - I haven't really touched the async features of FastAPI. For some database
   queries that could be a big win.
+  
