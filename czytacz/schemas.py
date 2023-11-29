@@ -36,6 +36,7 @@ class ItemBase(BaseModel):
     author: Optional[str]
     summary: Optional[str]
     published: Optional[datetime.datetime]
+    
     content: list[ItemContent] = []
 
 
@@ -44,11 +45,15 @@ class ItemFetched(ItemBase):
 
 
 class Item(ItemBase):
+    id: int
     updated: datetime.datetime
+    read: bool = False
 
     class Config:
         from_attributes = True
 
+class ItemForUpdate(BaseModel):
+    read: Optional[bool]
 
 class FeedBase(BaseModel):
     name: Optional[str]

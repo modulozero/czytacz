@@ -45,12 +45,11 @@ def fetch_feed(
     feed: schemas.FeedForFetch, force_fetch: bool = False
 ) -> schemas.FeedFetchResult:
     if force_fetch:
-        parsed = feedparser.parse(feed.source)
+        parsed = feedparser.parse(str(feed.source))
     else:
         parsed = feedparser.parse(
             str(feed.source), etag=feed.etag, modified=feed.last_modified
         )
-    print(parsed.status)
 
     return schemas.FeedFetchResult(
         source=parsed.href,

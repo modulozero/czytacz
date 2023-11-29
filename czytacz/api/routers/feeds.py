@@ -70,3 +70,18 @@ def force_fetch(
         raise HTTPException(
             status.HTTP_503_SERVICE_UNAVAILABLE, detail="Already fetching the feed"
         )
+
+@router.put("/feeds/{feed_id}/{item_id}")
+def update_item(
+    db: dependencies.DatabaseSession,
+    user: authentication.RequireUser,
+    feed_id: int,
+    item_id: int,
+    item: schemas.ItemForUpdate,
+) -> schemas.Item:
+    try:
+        updated_item = feeds.update_item(db, user.id, feed_id, item_id, item)
+    except feeds.NotFoundError:
+        raise HTTPException(status.HTTP_404_NOT_FOUND)
+    
+    return updated_item

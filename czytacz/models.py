@@ -82,3 +82,4 @@ class Item(Base):
     published: Mapped[Optional[datetime.datetime]]
     content: Mapped[list[Any]] = mapped_column(JSONB)
     updated: Mapped[datetime.datetime]
+    read: Mapped[bool] = mapped_column(default=False)
